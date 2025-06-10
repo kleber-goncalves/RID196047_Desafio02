@@ -1,0 +1,406 @@
+.container {
+    /* Container principal(body) com largura máxima e centralizado
+        Utiliza CSS Grid para dividir a página em 3 linhas:
+        - 1ª linha: cabeçalho (100px de altura)
+        - 2ª linha: conteúdo principal (ocupa o restante do espaço)
+        - 3ª linha: rodapé (100px de altura)
+        O gap define o espaçamento de 10px entre linhas e colunas.
+    */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px 10px;
+}
+
+.header {
+    /* Cabeçalho */
+    grid-row: 1 / 2; 
+    grid-column: 1 / 2;
+}
+
+.main {
+    /* Conteúdo principal */
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.footer {
+    /* Rodapé */
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+
+
+
+
+
+.container-main { 
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+}
+
+/* 
+    As classes abaixo são para os filhos do .container-main (geralmente dentro do <main>).
+    Elas posicionam o conteúdo principal e a barra lateral (sidebar) nas colunas do grid.
+*/
+
+.content {
+    /* Ocupa a primeira coluna do grid (área principal de conteúdo) */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    /* Exemplo de preenchimento e cor para visualização */
+    padding: 1rem; /* 1rem = 16px */
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    /* Ocupa a segunda coluna do grid (área da barra lateral) */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    /* Exemplo de preenchimento e cor para visualização */
+    padding: 1rem; /* 1rem = 16px */
+    background-color: #e9ecef;
+}
+
+
+
+
+
+
+
+/* Utilitários de display flex */
+/* 
+    .d-flex: aplica display flex ao elemento.
+    .flex-row: direção das linhas (padrão).
+    .flex-column: direção das colunas.
+    .justify-center: centraliza horizontalmente.
+    .align-center: centraliza verticalmente.
+    .d-grid: aplica display grid ao elemento.
+    .grid-cols-2: duas colunas iguais.
+    .grid-cols-3: três colunas iguais.
+    .gap-1: espaçamento entre linhas/colunas de 0.5rem (8px).
+    .gap-2: espaçamento entre linhas/colunas de 1rem (16px).
+*/
+
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+/* Utilitários de display grid */
+/*
+.d-grid: aplica display grid ao elemento.
+.grid-cols-2: duas colunas iguais.
+.grid-cols-3: três colunas iguais.
+.gap-1: espaçamento entre linhas/colunas de 0.5rem (8px).
+.gap-2: espaçamento entre linhas/colunas de 1rem (16px).
+*/
+.d-grid {
+    display: grid;
+}
+.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gap-1 {
+    gap: 0.5rem; /* 0.5rem = 8px */
+}
+.gap-2 {
+    gap: 1rem; /* 1rem = 16px */
+}
+
+/* =========================
+    Utilitários de espaçamento, texto, cor de fundo, borda e exibição
+    =========================
+    Classes utilitárias para espaçamento, alinhamento de texto, cores de fundo,
+    bordas e exibição. Utilizam medidas relativas (rem) para melhor adaptação.
+    Medida base: 1rem = 16px
+*/
+
+/* Utilitários de espaçamento */
+
+/* Margens à top(cima) */
+.mt-0 {
+    margin-top: 0; /* 0px */
+}
+.mt-1 {
+    margin-top: 0.5rem; /* 0.5rem = 8px */
+}
+.mt-2 {
+    margin-top: 1rem; /* 1rem = 16px */
+}
+.mt-3 {
+    margin-top: 1.5rem; /* 1.5rem = 24px */
+}
+.mt-4 {
+    margin-top: 2rem; /* 2rem = 32px */
+}
+.mt-5 {
+    margin-top: 2.5rem; /* 2.5rem = 40px */
+}
+.mt-6 {
+    margin-top: 3rem; /* 3rem = 48px */
+}
+.mt-7 {
+    margin-top: 3.5rem; /* 3.5rem = 56px */
+}
+
+/* Margens à bottom(baixo) */
+.mb-0 {
+    margin-bottom: 0; /* 0px */
+}
+.mb-1 {
+    margin-bottom: 0.5rem; /* 0.5rem = 8px */
+}
+.mb-2 {
+    margin-bottom: 1rem; /* 1rem = 16px */
+}
+.mb-3 {
+    margin-bottom: 1.5rem; /* 1.5rem = 24px */
+}
+.mb-4 {
+    margin-bottom: 2rem; /* 2rem = 32px */
+}
+.mb-5 {
+    margin-bottom: 2.5rem; /* 2.5rem = 40px */
+}
+
+/* Margens à left(esquerda) */
+.ml-1 {
+    margin-left: 0.5rem; /* 0.5rem = 8px */
+}
+.ml-2 {
+    margin-left: 1rem; /* 1rem = 16px */
+}
+.ml-3 {
+    margin-left: 1.5rem; /* 1.5rem = 24px */
+}
+.ml-4 {
+    margin-left: 2rem; /* 2rem = 32px */
+}
+
+/* Margens à right(direita) */
+.mr-1 {
+    margin-right: 0.5rem; /* 0.5rem = 8px */
+}
+.mr-2 {
+    margin-right: 1rem; /* 1rem = 16px */
+}
+.mr-3 {
+    margin-right: 1.5rem; /* 1.5rem = 24px */
+}
+.mr-4 {
+    margin-right: 2rem; /* 2rem = 32px */
+}
+
+.p-1 {
+    padding: 0.5rem; /* 0.5rem = 8px */
+}
+.p-2 {
+    padding: 1rem; /* 1rem = 16px */
+}
+.p-3 {
+    padding: 1.5rem; /* 1.5rem = 24px */
+}
+.p-4 {
+    padding: 2rem; /* 2rem = 32px */
+}
+
+/* Utilitários de responsividade */
+/* 
+    .w-100: largura total do elemento (100% do container).
+    .h-100: altura total do elemento (100% do container).
+    .w-50: largura de 50% do container.
+    .h-50: altura de 50% do container.
+    .w-25: largura de 25% do container.
+    .h-25: altura de 25% do container.
+    .w-auto: largura automática.
+    .h-auto: altura automática.
+*/
+
+/* Largura total */
+.w-100 {
+    width: 100%; /* 100% da largura do elemento pai */
+}
+.w-75 {
+    width: 75%; /* 75% da largura do elemento pai */
+}
+.w-50 {
+    width: 50%; /* 50% da largura do elemento pai */
+}
+.w-25 {
+    width: 25%; /* 25% da largura do elemento pai */
+}
+
+.w-auto {
+    width: auto; /* largura automática */
+}
+
+.w-1rem {
+    width: 1rem; /* 1rem = 16px */
+}
+.w-2rem {
+    width: 2rem; /* 2rem = 32px */
+}
+.w-3rem {
+    width: 3rem; /* 3rem = 48px */
+}
+.w-4rem {
+    width: 4rem; /* 4rem = 64px */
+}
+
+/* Altura total */
+.h-100 {
+    height: 100%; /* 100% da altura do elemento pai */
+}
+.h-75 {
+    height: 75%; /* 75% da altura do elemento pai */
+}
+.h-50 {
+    height: 50%; /* 50% da altura do elemento pai */
+}
+.h-25 {
+    height: 25%; /* 25% da altura do elemento pai */
+}
+
+.h-auto {
+    height: auto; /* altura automática */
+}
+
+.h-1rem {
+    height: 1rem; /* 1rem = 16px */
+}
+.h-2rem {
+    height: 2rem; /* 2rem = 32px */
+}
+.h-4em {
+    height: 4em; /* 4em = 4x tamanho da fonte do elemento */
+}
+
+/* Utilitários de largura baseados em (em) para fontes */
+/* 
+    .w-1em: largura igual a 1em (igual ao tamanho da fonte do elemento)
+    .w-2em: largura igual a 2em (2x o tamanho da fonte do elemento)
+    .w-3em: largura igual a 3em (3x o tamanho da fonte do elemento)
+    .w-4em: largura igual a 4em (4x o tamanho da fonte do elemento)
+*/
+
+.w-1em {
+    width: 1em; /* 1em = tamanho da fonte do elemento */
+}
+.w-2em {
+    width: 2em; /* 2em = 2x tamanho da fonte do elemento */
+}
+.w-3em {
+    width: 3em; /* 3em = 3x tamanho da fonte do elemento */
+}
+.w-4em {
+    width: 4em; /* 4em = 4x tamanho da fonte do elemento */
+}
+
+/* Utilitários para tamanho de fonte usando em */
+/* 
+    .fs-1em: fonte com 1em (igual ao tamanho da fonte do elemento pai, geralmente 16px)
+    .fs-1-5em: fonte com 1.5em (1.5x o tamanho da fonte do elemento pai, geralmente 24px)
+    .fs-2em: fonte com 2em (2x o tamanho da fonte do elemento pai, geralmente 32px)
+    .fs-0-75em: fonte com 0.75em (75% do tamanho da fonte do elemento pai, geralmente 12px)
+*/
+
+.fs-1em {
+    font-size: 1em; /* 1em = 16px (padrão) */
+}
+.fs-1-5em {
+    font-size: 1.5em; /* 1.5em = 24px */
+}
+.fs-2em {
+    font-size: 2em; /* 2em = 32px */
+}
+.fs-0-75em {
+    font-size: 0.75em; /* 0.75em = 12px */
+}
+
+/* Utilitários de texto */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-muted {
+    color: #6c757d;
+}
+
+/* Utilitários de cor de fundo */
+.bg-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+.bg-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+.bg-light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+.bg-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Utilitários de borda */
+.border {
+    border: 1px solid #dee2e6;
+}
+.rounded {
+    border-radius: 0.25rem; /* 0.25rem = 4px */
+}
+.rounded-pill {
+    border-radius: 50rem; /* 50rem = 800px */
+}
+
+/* Utilitários de exibição */
+.d-block {
+    display: block;
+    /* Faz o elemento ocupar toda a largura disponível e iniciar em uma nova linha */
+}
+.d-inline {
+    display: inline; /* Faz o elemento ocupar apenas o espaço necessário */
+}
+.d-none {
+    display: none;
+}
+
+/* Responsividade para imagens e vídeos */
+.img-fluid,
+.video-fluid {
+    max-width: 100%; /* imagem/vídeo nunca ultrapassa o tamanho do container */
+    height: auto; /* altura proporcional */
+    display: block; /* Faz o elemento ocupar toda a largura disponível e iniciar em uma nova linha */
+}
+/* Exemplo de uso:
+    <div class="w-100 h-50"></div>
+    <img class="img-fluid" src="imagem.jpg" />
+*/

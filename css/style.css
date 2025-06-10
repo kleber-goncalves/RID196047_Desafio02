@@ -1,0 +1,5 @@
+/* Define a base de fonte para todo o documento */
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px; /* 1rem = 16px */
+}
