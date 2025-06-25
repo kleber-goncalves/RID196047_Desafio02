@@ -17,8 +17,24 @@ body {
     line-height: 60%;
 }
 
+.sub-txts {
+    font-size: 1.25rem;
+    width: 38rem; /* esse sim modifica o leaut inteiro se for aumentado e sem sei o porque */
+}
+
 #article-Imagem {
     background-image: url(/img/bannerArticle.svg);
     background-repeat: no-repeat;
     height: 26rem;
+    position: relative;
+    right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97.7%; /* so serve para aumentar o nav e quebrar o leaut*/
+    height: 60px;
 }
