@@ -19,7 +19,7 @@ body {
 
 .sub-txts {
     font-size: 1.25rem;
-    width: 38rem; /* esse sim modifica o leaut inteiro se for aumentado e sem sei o porque */
+    width: 42rem; /* esse sim modifica o leaut inteiro se for aumentado e sem sei o porque */
 }
 
 #article-Imagem {
@@ -28,6 +28,7 @@ body {
     height: 26rem;
     position: relative;
     right: 20px;
+
 }
 
 nav {
@@ -35,6 +36,43 @@ nav {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 97.7%; /* so serve para aumentar o nav e quebrar o leaut*/
+    width: 97.9%; /* so serve para aumentar o nav e quebrar o leaut*/
     height: 60px;
+}
+
+main {
+    background-color: darkolivegreen;
+}
+
+#article-content {
+    background-color: chocolate;
+}
+
+
+#posts-Article {
+    background-color: brown;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 48.8% 48.8%;
+    gap: 20px;
+}
+
+#figure-Section-Article {
+    
+    background-color: darkgreen;
+}
+
+figure {
+    max-width: 0;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
+#iao {
+    border-radius: 16px;
+
+    width: 360px;
 }
