@@ -60,8 +60,9 @@ section {
 }
 
 #figure-Section-Article {
-    
     background-color: darkgreen;
+
+    margin-top: 10px;
 }
 
 figure {
@@ -75,4 +76,24 @@ figure {
     border-radius: 16px;
 
     width: 360px;
+}
+
+.txts-stile {
+    color: #616161;
+
+}
+
+.mrg-top {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.lor-txt {
+
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
