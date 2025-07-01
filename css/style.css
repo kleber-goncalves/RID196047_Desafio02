@@ -9,8 +9,6 @@ body {
     padding: 0;
 }
 
-
-
 .txts {
     width: 43.75rem;
     font-size: 2.27rem;
@@ -18,8 +16,10 @@ body {
 }
 
 .sub-txts {
-    font-size: 1.25rem;
-    width: 42rem; /* esse sim modifica o leaut inteiro se for aumentado e sem sei o porque */
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 #article-Imagem {
@@ -28,10 +28,9 @@ body {
     height: 26rem;
     position: relative;
     right: 20px;
-
 }
 
-nav {
+#post-nav {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -40,28 +39,10 @@ nav {
     height: 60px;
 }
 
-main {
-    background-color: darkolivegreen;
-}
-
-#article-content {
-    background-color: chocolate;
-}
-
-
-#posts-Article {
-    background-color: brown;
-}
-
-section {
+#figure-Section-Article {
     display: grid;
     grid-template-columns: 48.8% 48.8%;
     gap: 20px;
-}
-
-#figure-Section-Article {
-    background-color: darkgreen;
-
     margin-top: 10px;
 }
 
@@ -72,30 +53,44 @@ figure {
     background-color: blue;
 }
 
-#iao {
+#posts {
     border-radius: 16px;
-
     width: 360px;
 }
 
 .txts-stile {
     color: #616161;
-
 }
-/* terminar de arrumar a margem, e arrumar o top ou 
-o button do primeiro p, e ver oque acontece, se eu colocar o tamanhos
-dos textos que estao no figma, nos h1 */
-.mrg-top {
 
+.clr-v {
+    color: #02a28f;
+}
+
+.txts-posts {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.lor-txt {
+.tipo-txt-posts {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0%;
+.lors-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
 
+#ee {
+    padding: 16px 24px 16px 24px;
+    margin: 10px 0 0 0;
+}
+
+.txts-post-populares {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
