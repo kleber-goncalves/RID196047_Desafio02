@@ -56,7 +56,6 @@
     /* Ocupa a segunda coluna do grid (área da barra lateral) */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    
 }
 
 /* Utilitários de display flex */
@@ -410,3 +409,7 @@
     <div class="w-100 h-50"></div>
     <img class="img-fluid" src="imagem.jpg" />
 */
+
+.gap {
+    gap: 1.3rem;
+}
