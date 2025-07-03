@@ -59,6 +59,14 @@ figure {
 }
 
 .txts-stile {
+    margin-top: 0.3rem;
+    color: #616161;
+}
+
+.txts-stile-pst-pplrs {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 0.6rem;
     color: #616161;
 }
 
@@ -79,11 +87,9 @@ figure {
 .lors-txt {
     font-weight: 400;
     font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
 }
 
-#ee {
+.h1-sidebar {
     padding: 16px 24px 16px 24px;
     margin: 10px 0 0 0;
 }
@@ -92,5 +98,14 @@ figure {
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
-    letter-spacing: 0%;
+    margin: 2px 0 0 0;
+}
+.posts-populares {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    padding-left: 0.9rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
 }
