@@ -109,3 +109,31 @@ figure {
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
 }
+
+#categoria-conteiner {
+    margin-top: 1.7rem;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+ul li::marker {
+    content: ">";
+}
+
+li {
+    display: flex;
+    /*o padding da espaço entre a seta e a letra*/
+    padding-left: 5px;
+    list-style: none;
+}
+
+span {
+    /*o padding da espaço entre a letra e o span, porem 
+    tem que definir um por um
+    */
+    padding-left: 17.3rem;
+}
+
+/* eu estou pensando em criar uma div contendo a palavra + span, e adicionar o flex */
