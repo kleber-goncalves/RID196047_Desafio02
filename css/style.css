@@ -245,3 +245,84 @@ li {
         padding-left: 0.2rem;
     }
 }
+
+/* Responsividade para telas menores que 380px */
+@media (max-width: 380px) {
+    .container {
+        gap: 0 20px;
+    }
+    .p-1 {
+        padding: 0;
+    }
+    .txts {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+    }
+    .mr-3 {
+        margin-right: 0;
+    }
+    .ml-3 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .sub-txts {
+        font-size: 0.95rem;
+        padding: 0 0.2rem;
+    }
+    #article-Imagem {
+        height: 14.8rem;
+        width: 300px;
+        right: 0;
+        background-size: cover;
+        margin-bottom: 0.5rem;
+    }
+    #posts-Article {
+        padding: 0.5rem;
+    }
+    #post-nav {
+        flex-direction: row;
+        height: 34px;
+        width: 18rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    #post-nav p {
+        font-weight: 400;
+        font-size: 13px;
+    }
+    #figure-Section-Article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.2rem;
+    }
+    #posts {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 0.5rem;
+    }
+    .h1-sidebar {
+        padding: 0.5rem 0.2rem;
+        font-size: 0.95rem;
+        margin: 0.2rem 0 0 0;
+    }
+    .posts-populares {
+        flex-direction: column;
+        gap: 0.2rem;
+        padding-left: 0.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    ul {
+        padding-left: 0.2rem;
+    }
+    .span-saudes,
+    .span-dvlp,
+    .span-prdvd,
+    .span-opn {
+        padding-left: 0.2rem;
+        font-size: 0.9rem;
+    }
+}
