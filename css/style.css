@@ -23,11 +23,11 @@ body {
 }
 
 #article-Imagem {
-    background-image: url(/img/bannerArticle.svg);
+    background-image: url(/img/fundo-teste.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 26rem;
-    position: relative;
-    right: 20px;
+    border-radius: 10px;
 }
 
 #post-nav {
@@ -35,14 +35,14 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 97.9%; /* so serve para aumentar o nav e quebrar o leaut*/
     height: 60px;
+    margin-top: 2rem;
 }
 
 #figure-Section-Article {
     display: grid;
     grid-template-columns: 48.8% 48.8%;
-    gap: 20px;
+    gap: 24px;
     margin-top: 10px;
 }
 
@@ -91,7 +91,7 @@ figure {
 
 .h1-sidebar {
     padding: 16px 24px 16px 24px;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .txts-post-populares {
@@ -111,7 +111,7 @@ figure {
 }
 
 #categoria-conteiner {
-    margin-top: 1.7rem;
+    margin-top: 1.8rem;
 }
 
 ul {
@@ -129,16 +129,16 @@ li {
 }
 
 .span-saudes {
-    padding-left: 21rem;
+    padding-left: 20.3rem;
 }
 .span-dvlp {
-    padding-left: 15.7rem;
+    padding-left: 15rem;
 }
 .span-prdvd {
-    padding-left: 17.4rem;
+    padding-left: 16.8rem;
 }
 .span-opn {
-    padding-left: 20.8rem;
+    padding-left: 20.1rem;
 }
 
 /* =========================
@@ -247,10 +247,9 @@ li {
 }
 
 /* Responsividade para telas menores que 380px */
-@media (max-width: 380px) {
-    .container {
-        gap: 0 20px;
-    }
+@media (max-width: 375px) {
+
+
     .p-1 {
         padding: 0;
     }
@@ -271,13 +270,7 @@ li {
         font-size: 0.95rem;
         padding: 0 0.2rem;
     }
-    #article-Imagem {
-        height: 14.8rem;
-        width: 300px;
-        right: 0;
-        background-size: cover;
-        margin-bottom: 0.5rem;
-    }
+
     #posts-Article {
         padding: 0.5rem;
     }
