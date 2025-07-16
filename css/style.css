@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+
 .txts {
     width: 43.75rem;
     font-size: 2.27rem;
@@ -23,7 +24,12 @@ body {
 }
 
 #article-Imagem {
-    background-image: url(/img/fundo-teste.jpg);
+    background-image: linear-gradient(
+            180deg,
+            rgba(102, 102, 102, 0) 0%,
+            #000000 100%
+        ),
+        url(/img/fundo-teste.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 26rem;
@@ -65,7 +71,7 @@ figure {
 
 .txts-stile-pst-pplrs {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 0.6rem;
     color: #616161;
 }
@@ -101,7 +107,6 @@ figure {
     margin: 2px 0 0 0;
 }
 .posts-populares {
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     gap: 9rem;
@@ -141,40 +146,32 @@ li {
     padding-left: 20.1rem;
 }
 
+#txts-headeeeer {
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 19rem;
+    line-height: 1.5rem;
+}
+
+#txts-headeeeer .ml-3 {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-top: 24px;
+}
+
 /* =========================
    RESPONSIVIDADE
    ========================= */
-
-/* Telas grandes (desktop) - já está como padrão */
-
-/* Telas médias (tablets) */
-@media (max-width: 1024px) {
-    .container-main {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        gap: 16px 16px;
-        grid-template-columns: 1fr 40%;
-    }
-    .txts {
-        width: 100%;
-        font-size: 2rem;
-    }
-    #posts {
-        width: 100%;
-    }
-    #figure-Section-Article {
-        grid-template-columns: 1fr;
-    }
-    .posts-populares {
-        gap: 2rem;
-    }
-    .span-saudes,
-    .span-dvlp,
-    .span-prdvd,
-    .span-opn {
-        padding-left: 2rem;
-    }
-}
 
 /* Telas pequenas (celulares) */
 @media (max-width: 768px) {
@@ -217,6 +214,10 @@ li {
     .span-opn {
         padding-left: 0.5rem;
     }
+
+    footer {
+        text-align: center;
+    }
 }
 
 /* Telas muito pequenas (celulares pequenos) */
@@ -248,12 +249,25 @@ li {
 
 /* Responsividade para telas menores que 380px */
 @media (max-width: 375px) {
-
-
+    .container {
+        gap: 0;
+        grid-template-rows: 1fr;
+    }
+    .header {
+        text-align: center;
+        max-width: 375px;
+    }
+    .container-main {
+        padding-left: 0.6rem;
+    }
+    .pl-1 {
+        padding-left: 0;
+    }
     .p-1 {
         padding: 0;
     }
     .txts {
+        margin-top: 1.6rem;
         font-weight: 700;
         font-style: Bold;
         font-size: 24px;
@@ -261,7 +275,8 @@ li {
     .mr-3 {
         margin-right: 0;
     }
-    .ml-3 {
+
+    #post-nav .ml-3 {
         margin-top: 0;
         margin-left: 0;
         margin-bottom: 0;
@@ -270,14 +285,21 @@ li {
         font-size: 0.95rem;
         padding: 0 0.2rem;
     }
+    #article-Imagem {
+        height: 26rem;
+        width: 22.3rem;
+    }
 
     #posts-Article {
-        padding: 0.5rem;
+        width: 22.2rem;
+        padding: 0;
     }
     #post-nav {
+        margin: 0;
+        margin-bottom: 1rem;
         flex-direction: row;
         height: 34px;
-        width: 18rem;
+        width: 20.7rem;
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
@@ -291,31 +313,71 @@ li {
         gap: 0.5rem;
         margin-top: 0.2rem;
     }
+    .img-post {
+        max-width: 355px;
+    }
     #posts {
         width: 100%;
         min-width: 0;
-        margin-bottom: 0.5rem;
     }
     .h1-sidebar {
-        padding: 0.5rem 0.2rem;
-        font-size: 0.95rem;
-        margin: 0.2rem 0 0 0;
+        text-align: center;
+        padding: 0.8rem 0.2rem;
+        font-size: 1.2rem;
+        width: 22rem;
+    }
+    #posts-populares-conteiner {
+        width: 22.3rem;
     }
     .posts-populares {
-        flex-direction: column;
-        gap: 0.2rem;
-        padding-left: 0.2rem;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
+        flex-direction: row;
+        gap: 9.3rem;
+        padding-left: 1rem;
     }
     ul {
         padding-left: 0.2rem;
     }
-    .span-saudes,
-    .span-dvlp,
-    .span-prdvd,
+    .span-saudes {
+        padding-left: 16.7rem;
+    }
+    .span-dvlp {
+        padding-left: 11.5rem;
+    }
+    .span-prdvd {
+        padding-left: 13.2rem;
+    }
     .span-opn {
-        padding-left: 0.2rem;
-        font-size: 0.9rem;
+        padding-left: 16.6rem;
+    }
+
+    .tipo-txt-posts {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #txts-headeeeer {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-top: 18rem;
+    }
+
+    #txts-headeeeer h1 {
+        line-height: 1.5rem;
+    }
+
+    #txts-headeeeer .ml-3 {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    footer {
+        margin: 0;
+        height: 2rem;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 9px;
     }
 }
